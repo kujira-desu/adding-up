@@ -52,10 +52,12 @@ rl.on('close', () => {
         return key + ': ' + value.popu10 + '=>' + value.popu15 + ' 変化率:' + value.change
     });
 
+    //表示
+    console.log('- CSV ---------------------------');
     console.log(prefectureDataMap);
-    console.log('----------------------------');
+    console.log('- ソート後 ---------------------------');
     console.log(rankingArray);
-    console.log('----------------------------');
+    console.log('- 整形 ---------------------------');
     console.log(rankingStrings);
 
 })
